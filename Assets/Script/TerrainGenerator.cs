@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class TerrainGenerator : MonoBehaviour
 {
-    private List<GameObject> currentTerrains = new List<GameObject>();
-    [HideInInspector] public Vector3 currentPosition = new Vector3(0, 0, 0);
-
     [SerializeField] private int minDistanceFromPlayer;
     [SerializeField] private int maxTerrainCount;
     [SerializeField] private List<TerrainData> terrainDatas = new List<TerrainData>();
     [SerializeField] private Transform terrainHolder;
+
+    private List<GameObject> currentTerrains = new List<GameObject>();
+    [HideInInspector] public Vector3 currentPosition = new Vector3(0f, 0f, 0f);
 
     private void Start()
     {

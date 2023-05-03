@@ -45,8 +45,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentPosition: {x: 30, y: 0, z: 0}
-  minDistanceFromPlayer: 30
-  maxTerrainCount: 32
+  minDistanceFromPlayer: 20
+  maxTerrainCount: 25
   terrainDatas:
   - {fileID: 11400000, guid: f069feee661484440a131f977ec6ccdf, type: 2}
   - {fileID: 11400000, guid: d411f5c22b598314eafb6447ed096f92, type: 2}
