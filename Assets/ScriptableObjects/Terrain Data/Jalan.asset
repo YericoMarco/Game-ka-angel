@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Jalan
   m_EditorClassIdentifier: 
   Terrain: {fileID: 56360244656229414, guid: 8edb927c6a4b0da4bb8af70ab3669200, type: 3}
-  maxInSuccession: 0
+  maxInSuccession: 4

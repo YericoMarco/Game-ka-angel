@@ -20,6 +20,14 @@ public class TerrainGenerator : MonoBehaviour
         }
     }
 
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.W))
+        {
+            SpawnTerrain(true, transform.position);
+        }
+    }
+
     public void SpawnTerrain(bool isStart, Vector3 playerPos)
     {
         if (currentPosition.x - playerPos.x < minDistanceFromPlayer || (isStart))
