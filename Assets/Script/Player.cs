@@ -29,7 +29,7 @@ public class Player : MonoBehaviour
         { 
             MoveCharacter(new Vector3(0, 0, 1));
         }
-        else if (Input.GetKeyDown(KeyCode.D) && !isHopping)
+        else if (Input.GetKeyDown(KeyCode.A) && !isHopping)
         {
             MoveCharacter(new Vector3(0, 0, -1));
         }

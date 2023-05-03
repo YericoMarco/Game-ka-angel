@@ -5,7 +5,7 @@ using UnityEngine;
 public class TerrainGenerator : MonoBehaviour
 {
     private List<GameObject> currentTerrains = new List<GameObject>();
-    public Vector3 currentPosition = new Vector3(0, 0, 0);
+    [HideInInspector] public Vector3 currentPosition = new Vector3(0, 0, 0);
 
     [SerializeField] private int minDistanceFromPlayer;
     [SerializeField] private int maxTerrainCount;
@@ -18,13 +18,11 @@ public class TerrainGenerator : MonoBehaviour
         {
             SpawnTerrain(true, new Vector3(0,0,0));
         }
-        maxTerrainCount = currentTerrains.Count;
     }
 
     public void SpawnTerrain(bool isStart, Vector3 playerPos)
     {
-        Debug.Log(currentPosition.x - playerPos.x);
-        if (currentPosition.x - playerPos.x < minDistanceFromPlayer)
+        if (currentPosition.x - playerPos.x < minDistanceFromPlayer || (isStart))
         {
             int whichTerrain = Random.Range(0, terrainDatas.Count);
             int terrainInSuccession = Random.Range(1, terrainDatas[whichTerrain].maxInSuccession);
