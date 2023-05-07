@@ -12,5 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50d339fa0d22b9d489c52a454f0d33d5, type: 3}
   m_Name: Rumput
   m_EditorClassIdentifier: 
-  Terrain: {fileID: 56360244656229414, guid: ced9950d4039c9848b0ac9cdedafc37c, type: 3}
+  possibleTerrain:
+  - {fileID: 56360244656229414, guid: ced9950d4039c9848b0ac9cdedafc37c, type: 3}
+  - {fileID: 878128343230665147, guid: 4bd7300afc6959640befc54e65930d0e, type: 3}
+  - {fileID: 3539383478487512113, guid: d0ff2b23115b4374dbd87a1cb21cddc6, type: 3}
   maxInSuccession: 4

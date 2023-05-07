@@ -12,5 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50d339fa0d22b9d489c52a454f0d33d5, type: 3}
   m_Name: Air
   m_EditorClassIdentifier: 
-  Terrain: {fileID: 56360244656229414, guid: d93380fcd470f6f4aa8520051497aeb5, type: 3}
+  possibleTerrain:
+  - {fileID: 56360244656229414, guid: d93380fcd470f6f4aa8520051497aeb5, type: 3}
+  - {fileID: 1855541388234082249, guid: c227378f66f88fe489ac6edf19ec46bf, type: 3}
   maxInSuccession: 3

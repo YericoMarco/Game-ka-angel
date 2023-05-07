@@ -12,5 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50d339fa0d22b9d489c52a454f0d33d5, type: 3}
   m_Name: Jalan
   m_EditorClassIdentifier: 
-  Terrain: {fileID: 56360244656229414, guid: 8edb927c6a4b0da4bb8af70ab3669200, type: 3}
-  maxInSuccession: 4
+  possibleTerrain:
+  - {fileID: 3345876763109287130, guid: c380ee80dc8a4544ea0da0751e8989e5, type: 3}
+  - {fileID: 3307259148963751785, guid: 292290b6f71ba234c86a4ece0549c45d, type: 3}
+  maxInSuccession: 0

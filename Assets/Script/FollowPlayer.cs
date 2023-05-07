@@ -10,6 +10,9 @@ public class FollowPlayer : MonoBehaviour
     
     private void Update()
     {
+        if(Player !=null)
+        {
         transform.position = Vector3.Lerp(transform.position, Player.transform.position + offset, smoothness);
+        }
     }
 }
